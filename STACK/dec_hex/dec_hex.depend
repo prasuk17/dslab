@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1665482513 source:d:\dslab\dec_hex\main.c
+	<stdio.h>
+	<stdlib.h>
+
