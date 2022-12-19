@@ -147,22 +147,7 @@ int height(struct node *t){
     }
 }
 /*****************************/
-void mirror(struct node **T){
 
-    struct node *p,*temp;
-    if((*T)->left!=NULL || (*T)->right!=NULL){
-        mirror(&(*T)->left);
-        mirror(&(*T)->right);
-        temp=(*T)->left;
-        (*T)->left=(*T)->right;
-        (*T)->right=temp;
-    }
-    else{
-        return NULL;
-    }
-
-
-}
 
 int main(){
     struct node *root=NULL;
@@ -182,9 +167,6 @@ int main(){
     printf("n2 node %d\n",countn2(root));
     printf("n1 node %d\n",countn1(root));
     printf("height %d\n",height(root));
-    printf("\n");
-    mirror(&root);
-    inorderTraversal(root);
-    printf("\n");
+
     return 0;
 }
